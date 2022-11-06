@@ -1,38 +1,171 @@
-.App {
-  text-align: center;
+.wrapper{
+    padding:5px;
+    background: #2e304b;
+    color: aliceblue;
+    height: 100vh;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.hero-button, .resumeButton{
+    background: #2e304b;
+    color: aliceblue;
+    border-radius: 2rem;
+    height: 4rem;
+    width: 15rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.heroLink{
+    width: 30%;
+    font-size: 2rem;
+}
+
+/* hover for linkedIN
+.linkedIn{
+    overflow: hidden;
+    position: relative;
+    display: inline-block;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  
+.linkedIn::before,
+.linkedIn::after {
+   content: '';
+    position: absolute;
+    width: 100%;
+    left: 0;
   }
-  to {
-    transform: rotate(360deg);
+.linkedIn::before {
+    background-color: #54b3d6;
+    height: 2px;
+    bottom: 0;
+    transform-origin: 100% 50%;
+    transform: scaleX(0);
+    transition: transform .3s cubic-bezier(0.76, 0, 0.24, 1);
   }
+.linkedIn::after {
+    content: attr(data-replace);
+    height: 100%;
+    top: 0;
+    transform-origin: 100% 50%;
+    transform: translate3d(200%, 0, 0);
+    transition: transform .3s cubic-bezier(0.76, 0, 0.24, 1);
+    color: #54b3d6;
+  }
+  
+.linkedIn:hover::before {
+    transform-origin: 0% 50%;
+    transform: scaleX(1);
+  }
+.linkedIn:hover::after {
+    transform: translate3d(0, 0, 0);
+  }
+  
+.linkedIn span {
+    display: inline-block;
+    transition: transform .3s cubic-bezier(0.76, 0, 0.24, 1);
+  }
+  
+.linkedIn:hover span {
+    transform: translate3d(-200%, 0, 0);
+  }
+
+
+
+.facebook{
+    text-decoration: none;
+    color: #18272F;
+    font-weight: 700;
+    position: relative;
+  }
+  
+.facebook::before {
+    content: '';
+    background-color: hsla(196, 61%, 58%, .75);
+    position: absolute;
+    left: 0;
+    bottom: 3px;
+    width: 100%;
+    height: 8px;
+    z-index: -1;
+    transition: all .3s ease-in-out;
+  }
+  
+.facebook:hover::before {
+    bottom: 0;
+    height: 100%;
+  }
+
+  /* instagram animation */
+/* .instagram{
+    background-image: linear-gradient(
+      to right,
+      #54b3d6,
+      #54b3d6 50%,
+      #000 50%
+    );
+    background-size: 200% 100%;
+    background-position: -100%;
+    display: inline-block;
+    padding: 5px 0;
+    position: relative;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: all 0.3s ease-in-out;
+  }
+  
+.instagram:before {
+    content: '';
+    background: #54b3d6;
+    display: block;
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 0;
+    height: 3px;
+    transition: all 0.3s ease-in-out;
+  }
+  
+.instagram:hover {
+   background-position: 0;
+  }
+  
+.instagram:hover::before {
+    width:100%;
+  }
+
+
+  /* Github animation */
+/* .github{
+    background: linear-gradient(0deg, slateblue, slateblue) no-repeat right bottom / 0 var(--bg-h);
+    transition: background-size 350ms;
+    --bg-h: 100%;
+  }
+.github:where(:hover, :focus-visible) {
+    background-size: 100% var(--bg-h);
+    background-position-x: left;
+  }
+.github{
+    text-decoration: none;
+    color: inherit;
+    line-height: 1;
+  }  */ 
+
+
+  .resumeButton{
+    height: 35px;
+    width: 180px;
+  }
+
+  .icons, .title{
+    font-size: 2rem;
+  }
+
+  .icons i:hover{
+    color: red;
+  }
+
+  
+.parallax{
+    background: url('./images/di.webp') no-repeat center center;
+    background-size: cover;
+    background-attachment: fixed;
+    min-height:70vh;
 }
