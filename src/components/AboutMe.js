@@ -1,9 +1,11 @@
 import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import di from "../images/di.webp";
+import { Layout } from "./Layout";
 
 export const AboutMe = () => {
   return (
+    <Layout>
     <Container id="about-me" className="mt-3 py-5 text-primary">
       <div className="title text-center mb-5">
         <span>About Me</span>
@@ -30,6 +32,6 @@ export const AboutMe = () => {
           </p>
         </Col>
       </Row>
-    </Container>
+    </Container></Layout>
   );
 };

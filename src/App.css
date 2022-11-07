@@ -5,7 +5,8 @@
     height: 100vh;
 }
 
-.hero-button, .resumeButton{
+.hero-button, 
+.resumeButton{
     background: #2e304b;
     color: aliceblue;
     border-radius: 2rem;
@@ -168,4 +169,11 @@
     background-size: cover;
     background-attachment: fixed;
     min-height:70vh;
+}
+
+.to-nav{
+  background: darkblue;
+}
+.layout{
+  min-height: 75vh;
 }

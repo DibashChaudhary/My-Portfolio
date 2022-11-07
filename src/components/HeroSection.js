@@ -1,14 +1,16 @@
 
 import React from 'react'
 import {Nav} from 'react-bootstrap'
+import { Layout } from './Layout'
 
 
 
 export const HeroSection = () => {
   return (
     <>
+
       <div bg='dark' className='heroSection mt-5'>
-      
+      <Layout >
         <div>
           <h1>Hi <i class="fa-sharp fa-solid fa-hand-wave"></i> I am Dibash Chaudhary </h1>
           <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit ut nobis similique commodi excepturi, unde dolorum fugit repudiandae veritatis optio. Nostrum sunt quasi quaerat, vel dicta fugit laboriosam possimus similique!</p>
@@ -40,6 +42,7 @@ export const HeroSection = () => {
           </ul>
         </div>
         <button className='resumeButton mt-1'>Download Resume</button>
+        </Layout>
       </div>
       
     </>
