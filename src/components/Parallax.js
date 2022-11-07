@@ -1,6 +1,4 @@
 import React from 'react'
-import { Parallax } from 'react-parallax'
-import di from '../images/di.webp'
 
 
 export const Parallaxa= () => {
@@ -13,10 +11,6 @@ export const Parallaxa= () => {
           {/* <Parallax  strength={600} bgImage={di} >
              
           </Parallax> */}
-          
-          
-
-
         </div>
     
   )

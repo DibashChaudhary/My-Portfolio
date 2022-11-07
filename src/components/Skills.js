@@ -1,8 +1,10 @@
 import React from 'react'
+import { Layout } from './Layout'
 
 export const Skills = () => {
   return (
     <>
+    <Layout >
     <div className='title  text-center'>Skills</div>
         <div className='Skills mt-5 mb-5 text-center d-flex justify-content-between'>
             <div className='icons'>
@@ -40,6 +42,7 @@ export const Skills = () => {
 
 
         </div>
+        </Layout>
     </>
   )
 }
