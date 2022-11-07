@@ -6,8 +6,8 @@ import { Layout } from "./Layout";
 export const AboutMe = () => {
   return (
     <Layout>
-    <Container id="about-me" className="mt-3 py-5 text-primary">
-      <div className="title text-center mb-5">
+    <Container id="about-me" className="mt-3">
+    <div className="title text-center mt-5 mb-5">
         <span>About Me</span>
       </div>
       <Row>

@@ -5,12 +5,12 @@ import { Layout } from "./Layout";
 export const Contact = () => {
   return (
     <Layout>
-    <Container id="contact" className=" contact rounded-5 py-2 text-primary text-center">
-      <div className="title">
+    <Container id="contact" className=" contact rounded-5">
+    <div className="title text-center mt-5 mb-5">
         <span>Contact Me</span>
       </div>
-      <Row className=" fa-3x">
-        <Col className="  d-flex justify-content-around pb-4">
+      <Row className="fa-3x">
+        <Col className="d-flex justify-content-around pb-4">
           <a href="tel:0409876789">
             <i className="fa-solid fa-mobile"></i>
           </a>

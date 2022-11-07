@@ -7,9 +7,14 @@ export const Project = () => {
   return (
     <>
     <Layout>
-    <div className='projects d-flex flex-row justify-content-start flex-nowrap'>
-    <div >
-        <Card>
+
+    <div className="title text-center mt-5 mb-5">
+        <span>Projects</span>
+      </div>
+    <div className='projects d-flex justify-content-start py-5'>
+    
+    <div>
+        <Card className='projectsCardBody'>
         <Card.Img variant="top" src={di} />
         <Card.Body>
           <Card.Text className='text-danger'>
@@ -20,7 +25,7 @@ export const Project = () => {
       </Card>
     </div>
     <div>
-        <Card>
+        <Card className='projectsCardBody'>
         <Card.Img variant="top" src={di} />
         <Card.Body>
         <Card.Text className='text-danger'>
@@ -31,7 +36,7 @@ export const Project = () => {
     </Card>
     </div>
     <div >
-        <Card>
+        <Card className='projectsCardBody'>
         <Card.Img variant="top" src={di} />
         <Card.Body>
           <Card.Text className='text-danger'>
@@ -42,7 +47,7 @@ export const Project = () => {
       </Card>
     </div>
     <div>
-        <Card>
+        <Card className='projectsCardBody'>
         <Card.Img variant="top" src={di} />
         <Card.Body>
         <Card.Text className='text-danger'>
@@ -53,7 +58,7 @@ export const Project = () => {
     </Card>
     </div>
     <div >
-        <Card>
+        <Card className='projectsCardBody'>
         <Card.Img variant="top" src={di} />
         <Card.Body>
           <Card.Text className='text-danger'>
@@ -64,7 +69,7 @@ export const Project = () => {
       </Card>
     </div>
     <div>
-        <Card>
+        <Card className='projectsCardBody'>
         <Card.Img variant="top" src={di} width={100}/>
         <Card.Body>
         <Card.Text className='text-danger'>
@@ -74,7 +79,6 @@ export const Project = () => {
         </Card.Body>
     </Card>
     </div>
-    
     </div>
     </Layout>
 </>

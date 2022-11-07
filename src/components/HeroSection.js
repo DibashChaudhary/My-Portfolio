@@ -2,6 +2,7 @@
 import React from 'react'
 import {Nav} from 'react-bootstrap'
 import { Layout } from './Layout'
+import { Parallaxa } from './Parallax'
 
 
 
@@ -9,9 +10,9 @@ export const HeroSection = () => {
   return (
     <>
 
-      <div bg='dark' className='heroSection mt-5'>
+      <div bg='dark' className='heroSection'>
       <Layout >
-        <div>
+        <div className='mt-5 '>
           <h1>Hi <i class="fa-sharp fa-solid fa-hand-wave"></i> I am Dibash Chaudhary </h1>
           <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit ut nobis similique commodi excepturi, unde dolorum fugit repudiandae veritatis optio. Nostrum sunt quasi quaerat, vel dicta fugit laboriosam possimus similique!</p>
           <button className='hero-button mt-5'>Let's Work Together</button>
@@ -44,6 +45,7 @@ export const HeroSection = () => {
         <button className='resumeButton mt-1'>Download Resume</button>
         </Layout>
       </div>
+      <Parallaxa />
       
     </>
   )

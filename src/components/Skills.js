@@ -5,7 +5,9 @@ export const Skills = () => {
   return (
     <>
     <Layout >
-    <div className='title  text-center'>Skills</div>
+    <div className="title text-center mt-5 mb-5">
+        <span>Skills</span>
+      </div>
         <div className='Skills mt-5 mb-5 text-center d-flex justify-content-between'>
             <div className='icons'>
                 <i class="fa-brands fa-html5"></i>
